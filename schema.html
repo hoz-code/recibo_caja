@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibo de Caja Menor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="receipt-container">
+        <!-- Encabezado / Header -->
+        <div class="receipt-header">
+            <div class="brand-box">
+                <div class="title-main">Recibo de Caja Menor</div>
+                <div class="brand-sub">
+                    <span class="brand-name">minerva</span> <span class="brand-ref">® 20-02 x 100</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cuerpo del recibo -->
+        <div class="receipt-body">
+            <!-- Fila 1: Ciudad, Fecha y Número -->
+            <div class="row row-top">
+                <div class="field-group city-group">
+                    <span class="label">Ciudad</span>
+                </div>
+                <div class="date-group">
+                    <div class="date-box"><span class="label-small">Día</span></div>
+                    <div class="date-box"><span class="label-small">Mes</span></div>
+                    <div class="date-box"><span class="label-small">Año</span></div>
+                </div>
+                <div class="field-group number-group">
+                    <span class="label bold-number">No.</span>
+                </div>
+            </div>
+
+            <!-- Fila 2: Pagado a y Valor ($) -->
+            <div class="row row-paid">
+                <div class="field-group paid-group">
+                    <span class="label">Pagado a</span>
+                </div>
+                <div class="field-group amount-group">
+                    <span class="label currency-symbol">$</span>
+                </div>
+            </div>
+
+            <!-- Fila 3: Concepto -->
+            <div class="row row-concept">
+                <div class="field-group concept-group">
+                    <span class="label">Concepto</span>
+                    <div class="line-space"></div>
+                    <div class="line-space"></div>
+                </div>
+            </div>
+
+            <!-- Fila 4: Valor en letras -->
+            <div class="row row-value-letters">
+                <div class="field-group letters-group">
+                    <span class="label">Valor <span class="normal-text">(en letras)</span></span>
+                    <div class="line-space"></div>
+                </div>
+            </div>
+
+            <!-- Fila 5: Código, Aprobado y Firma de recibido -->
+            <div class="row row-bottom">
+                <div class="left-bottom-col">
+                    <div class="code-box">
+                        <span class="label">Código</span>
+                    </div>
+                    <div class="approved-box">
+                        <span class="label green-text">Aprobado</span>
+                    </div>
+                </div>
+                <div class="right-bottom-col">
+                    <div class="signature-title">
+                        <span class="label green-text">Firma de recibido</span>
+                    </div>
+                    <div class="signature-footer">
+                        <span class="id-label">C.C.</span> <span class="checkbox"></span>
+                        <span class="id-label">NIT.</span> <span class="checkbox"></span>
+                        <span class="id-label">No.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

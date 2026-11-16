@@ -1,0 +1,257 @@
+/* Estilos generales de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal del recibo */
+.receipt-container {
+    width: 740px;
+    background-color: #fdfbf7;
+    border: 2px solid #b58d4a;
+    border-radius: 6px;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+
+/* Encabezado superior derecho */
+.receipt-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.brand-box {
+    border: 2px solid #2e7d32;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+}
+
+.title-main {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 5px 0;
+    font-family: 'Impact', Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.brand-sub {
+    text-align: center;
+    padding: 3px 0;
+    font-size: 11px;
+    background-color: #ffffff;
+}
+
+.brand-name {
+    font-weight: bold;
+    color: #b58d4a;
+    font-style: italic;
+}
+
+.brand-ref {
+    color: #666;
+    font-size: 10px;
+}
+
+/* Estructura interna del recibo */
+.receipt-body {
+    border: 1px solid #b58d4a;
+    background-color: #fffefb;
+}
+
+.row {
+    display: flex;
+    border-bottom: 1px solid #b58d4a;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.label {
+    font-size: 11px;
+    color: #705828;
+    font-weight: bold;
+}
+
+.normal-text {
+    font-weight: normal;
+    color: #555;
+}
+
+.green-text {
+    color: #2e7d32;
+}
+
+/* Fila 1: Ciudad, Fechas y Número */
+.row-top {
+    height: 40px;
+}
+
+.city-group {
+    flex: 3.5;
+    border-right: 1px solid #b58d4a;
+    padding: 4px 6px;
+}
+
+.date-group {
+    flex: 2.5;
+    display: flex;
+    border-right: 1px solid #b58d4a;
+}
+
+.date-box {
+    flex: 1;
+    border-right: 1px solid #b58d4a;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2px;
+}
+
+.date-box:last-child {
+    border-right: none;
+}
+
+.label-small {
+    font-size: 10px;
+    color: #705828;
+}
+
+.number-group {
+    flex: 2;
+    padding: 4px 6px;
+    background-color: #ffffff;
+}
+
+.bold-number {
+    font-size: 14px;
+    color: #b58d4a;
+}
+
+/* Fila 2: Pagado a y Monto */
+.row-paid {
+    height: 40px;
+}
+
+.paid-group {
+    flex: 7.5;
+    border-right: 1px solid #b58d4a;
+    padding: 4px 6px;
+}
+
+.amount-group {
+    flex: 2.5;
+    padding: 4px 6px;
+    background-color: #f1f8f0;
+}
+
+.currency-symbol {
+    font-size: 16px;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+/* Fila 3: Concepto */
+.row-concept {
+    min-height: 75px;
+    flex-direction: column;
+}
+
+.concept-group {
+    padding: 4px 6px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line-space {
+    border-bottom: 1px dotted #d2b48c;
+    height: 18px;
+    width: 100%;
+}
+
+/* Fila 4: Valor en letras */
+.row-value-letters {
+    min-height: 55px;
+    flex-direction: column;
+}
+
+.letters-group {
+    padding: 4px 6px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Fila 5: Código, Aprobado y Firmas */
+.row-bottom {
+    min-height: 75px;
+}
+
+.left-bottom-col {
+    flex: 3.5;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #b58d4a;
+}
+
+.code-box {
+    flex: 1;
+    border-bottom: 1px solid #b58d4a;
+    padding: 4px 6px;
+}
+
+.approved-box {
+    flex: 1;
+    padding: 4px 6px;
+    background: linear-gradient(to bottom, #ffffff, #e5f2e6);
+}
+
+.right-bottom-col {
+    flex: 6.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f4fbf3;
+    padding: 4px 6px;
+}
+
+.signature-title {
+    font-weight: bold;
+}
+
+.signature-footer {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    color: #705828;
+    padding-bottom: 3px;
+}
+
+.id-label {
+    margin-right: 3px;
+    font-weight: bold;
+}
+
+.checkbox {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #b58d4a;
+    background-color: white;
+    display: inline-block;
+    margin-right: 12px;
+}
