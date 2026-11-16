@@ -1,0 +1,27 @@
+{
+  "name": "recibo_caja",
+  "version": "1.0.0",
+  "description": "recibo de caja",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoz-code/recibo_caja.git"
+  },
+  "keywords": [
+    "recibo",
+    "pdf",
+    "generador"
+  ],
+  "author": "hoz-code",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoz-code/recibo_caja/issues"
+  },
+  "homepage": "https://github.com/hoz-code/recibo_caja#readme",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
