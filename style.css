@@ -83,6 +83,7 @@ body {
     font-size: 11px;
     color: #705828;
     font-weight: bold;
+    display: block;
 }
 
 .normal-text {
@@ -94,15 +95,30 @@ body {
     color: #2e7d32;
 }
 
+/* Estilos generales para los inputs (teclado) */
+.input-field {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #222;
+    width: 100%;
+}
+
+.input-field:focus {
+    background-color: rgba(181, 141, 74, 0.08);
+}
+
 /* Fila 1: Ciudad, Fechas y Número */
 .row-top {
-    height: 40px;
+    height: 42px;
 }
 
 .city-group {
     flex: 3.5;
     border-right: 1px solid #b58d4a;
-    padding: 4px 6px;
+    padding: 3px 6px;
 }
 
 .date-group {
@@ -115,9 +131,10 @@ body {
     flex: 1;
     border-right: 1px solid #b58d4a;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 2px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3px 4px;
+    text-align: center;
 }
 
 .date-box:last-child {
@@ -129,41 +146,72 @@ body {
     color: #705828;
 }
 
+.input-date {
+    border: none;
+    background: transparent;
+    outline: none;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+}
+
 .number-group {
     flex: 2;
-    padding: 4px 6px;
+    padding: 3px 6px;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .bold-number {
-    font-size: 14px;
+    font-size: 12px;
     color: #b58d4a;
+}
+
+.bold-input {
+    font-weight: bold;
+    color: #c0392b;
+    font-size: 14px;
 }
 
 /* Fila 2: Pagado a y Monto */
 .row-paid {
-    height: 40px;
+    height: 42px;
 }
 
 .paid-group {
     flex: 7.5;
     border-right: 1px solid #b58d4a;
-    padding: 4px 6px;
+    padding: 3px 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .amount-group {
     flex: 2.5;
-    padding: 4px 6px;
+    padding: 3px 6px;
     background-color: #f1f8f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .currency-symbol {
-    font-size: 16px;
+    font-size: 14px;
     color: #2e7d32;
     font-weight: bold;
+    display: inline;
 }
 
-/* Fila 3: Concepto */
+.amount-input {
+    font-weight: bold;
+    font-size: 14px;
+    color: #2e7d32;
+}
+
+/* Fila 3 y 4: Concepto y Valor en letras */
 .row-concept {
     min-height: 75px;
     flex-direction: column;
@@ -177,13 +225,6 @@ body {
     justify-content: space-between;
 }
 
-.line-space {
-    border-bottom: 1px dotted #d2b48c;
-    height: 18px;
-    width: 100%;
-}
-
-/* Fila 4: Valor en letras */
 .row-value-letters {
     min-height: 55px;
     flex-direction: column;
@@ -195,6 +236,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.line-input {
+    border-bottom: 1px dotted #d2b48c;
+    height: 20px;
+    padding-bottom: 2px;
 }
 
 /* Fila 5: Código, Aprobado y Firmas */
@@ -212,13 +259,19 @@ body {
 .code-box {
     flex: 1;
     border-bottom: 1px solid #b58d4a;
-    padding: 4px 6px;
+    padding: 3px 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .approved-box {
     flex: 1;
-    padding: 4px 6px;
+    padding: 3px 6px;
     background: linear-gradient(to bottom, #ffffff, #e5f2e6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .right-bottom-col {
@@ -234,12 +287,17 @@ body {
     font-weight: bold;
 }
 
+.signature-line {
+    border-bottom: 1px dotted #b58d4a;
+    margin-bottom: 5px;
+}
+
 .signature-footer {
     display: flex;
     align-items: center;
     font-size: 11px;
     color: #705828;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
 }
 
 .id-label {
@@ -247,11 +305,19 @@ body {
     font-weight: bold;
 }
 
-.checkbox {
+.checkbox-input {
     width: 13px;
     height: 13px;
-    border: 1px solid #b58d4a;
-    background-color: white;
-    display: inline-block;
     margin-right: 12px;
+    cursor: pointer;
+}
+
+.input-id-number {
+    border: none;
+    border-bottom: 1px solid #b58d4a;
+    background: transparent;
+    outline: none;
+    width: 100px;
+    font-size: 11px;
+    margin-left: 5px;
 }
